@@ -1,3 +1,4 @@
+<!--inline style overrides id, id overrides class and whichever comes last of the same overrides the previous. !important overrides them all.-->
 <style>
   body {
     background-color: black;
@@ -8,10 +9,10 @@
     color: orange;
   }
   .pink-text {
-    color: pink;
+    color: pink !important;
   }
   .blue-text {
     color: blue;
   }
 </style>
-<h1 id="orange-text" class="pink-text blue-text" style="color: white;">Hello World!</h1>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
